@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #235c2e;
+}
+img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}
+.player {
+  display: flex;
+  justify-content: space-evenly;
+  & h2 {
+    margin: 40px;
+  }
+}
+.number {
+  display: flex;
+  justify-content: space-evenly;
+}
+.number input {
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #235c2e;
+  margin: 3px;
+
+  /* Chrome */
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Opéra*/
+  &::-o-inner-spin-button {
+    -o-appearance: none;
+    margin: 0;
+  }
+}
+.valid {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: #235c2e;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.7rem;
+  margin-top: 20px;
+  padding: 13px;
+  color: white;
+}
+.result {
+  display: flex;
+  justify-content: space-evenly;
+  & p {
+    border: 1px solid #235c2e;
+    border-radius: 10px;
+    padding: 0px;
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+  }
+}
