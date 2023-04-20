@@ -9,7 +9,7 @@ body {
 img {
   margin-left: 50%;
   transform: translateX(-50%);
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .player {
@@ -50,7 +50,7 @@ img {
   border-radius: 10px;
   font-size: 1.7rem;
   margin-top: 20px;
-  padding: 13px;
+  padding: 10px;
   color: white;
 }
 
@@ -62,7 +62,7 @@ img {
   border: 1px solid #235c2e;
   border-radius: 10px;
   padding: 0px;
-  width: 30%;
+  width: 20%;
   text-align: center;
   margin: 10px;
 }/*# sourceMappingURL=style.css.map */
