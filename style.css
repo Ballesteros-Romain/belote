@@ -65,16 +65,4 @@ img {
   width: 20%;
   text-align: center;
   margin: 10px;
-}
-
-input[type=number] {
-  font-size: 16px; /* taille de police personnalisée */ /* IE 10 */
-  touch-action: manipulation; /* norme W3C */
-  -webkit-user-select: none; /* désactive la sélection de texte */
-  -moz-user-select: none;
-  user-select: none;
-  -webkit-user-scalable: no; /* désactive le zoom */
-  -moz-user-scalable: no;
-  -ms-user-scalable: no;
-  user-scalable: no;
 }/*# sourceMappingURL=style.css.map */
