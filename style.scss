@@ -19,9 +19,6 @@ img {
 .number {
   display: flex;
   justify-content: space-evenly;
-  width: 50vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
 }
 .number input {
   text-align: center;
@@ -41,6 +38,9 @@ img {
     margin: 0;
   }
 }
+input {
+  width: 50%;
+}
 .valid {
   margin-left: 50%;
   transform: translateX(-50%);
@@ -55,7 +55,6 @@ img {
 .result {
   display: flex;
   justify-content: space-evenly;
-
   & p {
     border: 3px solid #235c2e;
     border-radius: 10px;
@@ -63,8 +62,24 @@ img {
     width: 30%;
     text-align: center;
     margin-top: 10px;
+    width: 50%;
   }
 }
-.resultE {
-  margin-right: 0px;
+.resultEux {
+  margin-right: 3px;
+}
+.resultNous {
+  margin-right: 3px;
+}
+.check {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+label {
+  margin-left: 50px;
+}
+.capot {
+  display: flex;
 }
