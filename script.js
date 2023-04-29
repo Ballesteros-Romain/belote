@@ -4,6 +4,7 @@ let resultE = document.querySelector(".resultEux");
 let resultN = document.querySelector(".resultNous");
 let valid = document.querySelector(".valid");
 let sound = new Audio("117201833.mp3");
+const newGame = document.querySelector("#newGame");
 valid.addEventListener("click", validationAndReset);
 numberE.addEventListener("input", updateNumberN);
 numberN.addEventListener("input", updateNumberE);
@@ -29,11 +30,13 @@ function validationAndReset() {
   resultE.textContent = parseInt(resultE.textContent) + valueE;
   resultN.textContent = parseInt(resultN.textContent) + valueN;
 
-  if (resultE.textContent >= 1000 || resultN.textContent >= 1000) {
+  if (resultE.textContent > 999 || resultN.textContent >= 999) {
     sound.play();
-    alert(
-      "Vous avez atteint 1000 point, c'est gagné. Sauf si vous allez en 1500"
-    );
+    setTimeout(function () {
+      alert("Vous avez atteint 1000 point, c'est gagné.");
+    }, 500);
+  } else {
+    checked();
   }
 
   checked();
@@ -89,3 +92,7 @@ function capot() {
     resultN.textContent = parseInt(resultN.textContent) + 250;
   }
 }
+function replay() {
+  document.location.reload();
+}
+newGame.addEventListener("click", replay);
