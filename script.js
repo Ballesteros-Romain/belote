@@ -3,7 +3,7 @@ let numberN = document.querySelector(".numberN");
 let resultE = document.querySelector(".resultEux");
 let resultN = document.querySelector(".resultNous");
 let valid = document.querySelector(".valid");
-
+let sound = new Audio("117201833.mp3");
 valid.addEventListener("click", validationAndReset);
 numberE.addEventListener("input", updateNumberN);
 numberN.addEventListener("input", updateNumberE);
@@ -12,8 +12,8 @@ function validationAndReset() {
   let valueE = parseInt(numberE.value) || 0;
   let valueN = parseInt(numberN.value) || 0;
 
-  if (valueE > 160 || valueN > 160) {
-    alert("Les nombres doivent être inférieurs ou égaux à 160.");
+  if (valueE > 162 || valueN > 162) {
+    alert("Les nombres doivent être inférieurs ou égaux à 162.");
     zero();
     return; // arrêter la fonction si les nombres sont invalides
   }
@@ -30,6 +30,7 @@ function validationAndReset() {
   resultN.textContent = parseInt(resultN.textContent) + valueN;
 
   if (resultE.textContent >= 1000 || resultN.textContent >= 1000) {
+    sound.play();
     alert(
       "Vous avez atteint 1000 point, c'est gagné. Sauf si vous allez en 1500"
     );
@@ -44,14 +45,14 @@ function validationAndReset() {
 function updateNumberN() {
   let valueE = parseInt(numberE.value);
   if (!isNaN(valueE)) {
-    numberN.value = (160 - valueE) % 160;
+    numberN.value = (162 - valueE) % 162;
   }
 }
 
 function updateNumberE() {
   let valueN = parseInt(numberN.value);
   if (!isNaN(valueN)) {
-    numberE.value = (160 - valueN) % 160;
+    numberE.value = (162 - valueN) % 162;
   }
 }
 
