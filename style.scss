@@ -84,17 +84,22 @@ input {
 }
 .check {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   margin-bottom: 10px;
   margin-top: 10px;
+  & input {
+    margin-left: -10.8%;
+  }
 }
-#check,
-#capot {
-  margin-left: -80px;
+.droite {
+  margin-left: 0%;
 }
 label {
-  margin-left: 50px;
+  margin-left: 25%;
 }
 .capot {
   display: flex;
+  & input {
+    margin-left: -10%;
+  }
 }

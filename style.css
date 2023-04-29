@@ -94,20 +94,24 @@ input {
 
 .check {
   display: flex;
-  justify-content: center;
   margin-bottom: 10px;
   margin-top: 10px;
 }
+.check input {
+  margin-left: -10.8%;
+}
 
-#check,
-#capot {
-  margin-left: -80px;
+.droite {
+  margin-left: 0%;
 }
 
 label {
-  margin-left: 50px;
+  margin-left: 25%;
 }
 
 .capot {
   display: flex;
+}
+.capot input {
+  margin-left: -10%;
 }/*# sourceMappingURL=style.css.map */

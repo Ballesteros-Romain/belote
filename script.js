@@ -4,6 +4,8 @@ let resultE = document.querySelector(".resultEux");
 let resultN = document.querySelector(".resultNous");
 let valid = document.querySelector(".valid");
 let sound = new Audio("117201833.mp3");
+let isWinConditionMet = false;
+
 const newGame = document.querySelector("#newGame");
 valid.addEventListener("click", validationAndReset);
 numberE.addEventListener("input", updateNumberN);
@@ -31,10 +33,13 @@ function validationAndReset() {
   resultN.textContent = parseInt(resultN.textContent) + valueN;
 
   if (resultE.textContent > 999 || resultN.textContent >= 999) {
-    sound.play();
-    setTimeout(function () {
-      alert("Vous avez atteint 1000 point, c'est gagné.");
-    }, 500);
+    if (!isWinConditionMet) {
+      sound.play();
+      setTimeout(function () {
+        alert("Vous avez atteint 1000 point, c'est gagné.");
+      }, 500);
+      isWinConditionMet = true;
+    }
   } else {
     checked();
   }
