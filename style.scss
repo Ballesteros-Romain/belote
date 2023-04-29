@@ -80,7 +80,7 @@ input {
   margin-right: 3px;
 }
 .resultNous {
-  margin-right: 3px;
+  margin-left: 3px;
 }
 .check {
   display: flex;
@@ -88,14 +88,14 @@ input {
   margin-bottom: 10px;
   margin-top: 10px;
   & input {
-    margin-left: -14px;
+    margin-left: -13px;
   }
 }
 .droite {
-  margin-left: 0%;
+  margin-left: -10px;
 }
 label {
-  margin-left: 18%;
+  margin-left: 80px;
 }
 .capot {
   display: flex;

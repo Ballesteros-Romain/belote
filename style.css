@@ -89,7 +89,7 @@ input {
 }
 
 .resultNous {
-  margin-right: 3px;
+  margin-left: 3px;
 }
 
 .check {
@@ -98,15 +98,15 @@ input {
   margin-top: 10px;
 }
 .check input {
-  margin-left: -14px;
+  margin-left: -13px;
 }
 
 .droite {
-  margin-left: 0%;
+  margin-left: -10px;
 }
 
 label {
-  margin-left: 18%;
+  margin-left: 80px;
 }
 
 .capot {
