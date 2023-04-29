@@ -98,7 +98,7 @@ input {
   margin-top: 10px;
 }
 .check input {
-  margin-left: -10.8%;
+  margin-left: -14px;
 }
 
 .droite {
@@ -106,12 +106,12 @@ input {
 }
 
 label {
-  margin-left: 25%;
+  margin-left: 18%;
 }
 
 .capot {
   display: flex;
 }
 .capot input {
-  margin-left: -10%;
+  margin-left: -10px;
 }/*# sourceMappingURL=style.css.map */
